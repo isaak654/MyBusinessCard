@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.udacity.mybusinesscard.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        style="@style/CodeLogo"
+        android:contentDescription="@string/logo_desc" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/linear1_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/CodeTitle"
+                android:text="@string/title_name" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/CodeDesc"
+                android:text="@string/desc" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/table_marginTop"
+                android:shrinkColumns="*">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/location"
+                        style="@style/CodeLocation"
+                        android:contentDescription="@string/location_icon" />
+
+                    <TextView
+                        android:id="@+id/location_text"
+                        style="@style/CodeLocation_txt"
+                        android:text="@string/location_text" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/email"
+                        style="@style/CodeEmail"
+                        android:contentDescription="@string/email_icon" />
+
+                    <TextView
+                        android:id="@+id/email_text"
+                        style="@style/CodeEmail_txt"
+                        android:autoLink="email"
+                        android:text="@string/email_text" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/web"
+                        style="@style/CodeWeb"
+                        android:contentDescription="@string/web_icon" />
+
+                    <TextView
+                        android:id="@+id/web_text"
+                        style="@style/CodeWeb_txt"
+                        android:autoLink="web"
+                        android:text="@string/web_text" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/phone"
+                        style="@style/CodePhone"
+                        android:contentDescription="@string/phone_icon" />
+
+                    <TextView
+                        android:id="@+id/phone_number"
+                        style="@style/CodePhone_number"
+                        android:autoLink="phone"
+                        android:text="@string/phone_number" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/event"
+                        style="@style/CodeEvent"
+                        android:contentDescription="@string/event_icon" />
+
+                    <TextView
+                        android:id="@+id/event_text"
+                        style="@style/CodeEvent_txt"
+                        android:text="@string/event_text" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomBar_height"
+        android:background="@color/linear2_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/facebook"
+            style="@style/CodeFacebook"
+            android:contentDescription="@string/facebook_button"
+            android:onClick="facebook_bt" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            style="@style/CodeTwitter"
+            android:contentDescription="@string/twitter_button"
+            android:onClick="twitter_bt" />
+
+        <ImageView
+            android:id="@+id/gplus"
+            style="@style/CodeGPlus"
+            android:contentDescription="@string/gplus_button"
+            android:onClick="gplus_bt" />
+
+    </LinearLayout>
+
+</LinearLayout>

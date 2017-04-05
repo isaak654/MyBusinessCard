@@ -1,0 +1,133 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+    </style>
+
+    <style name="CodeLogo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/logo</item>
+    </style>
+
+    <style name="CodeTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/title_marginTop</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
+
+    <style name="CodeDesc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginEnd" tools:targetApi="17">@dimen/desc_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/desc_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/desc_marginRight</item>
+        <item name="android:layout_marginStart" tools:targetApi="17">@dimen/desc_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/desc_marginTop</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+    </style>
+
+    <style name="CodeLocation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ic_height</item>
+        <item name="android:src">@drawable/ic_location</item>
+    </style>
+
+    <style name="CodeLocation_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/info_txt_marginTop</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+    </style>
+
+    <style name="CodeEmail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ic_height</item>
+        <item name="android:layout_marginTop">@dimen/ic_email_marginTop</item>
+        <item name="android:src">@drawable/ic_email</item>
+    </style>
+
+    <style name="CodeEmail_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/info_txt_marginTop</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+    </style>
+
+    <style name="CodeWeb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ic_height</item>
+        <item name="android:src">@drawable/ic_web</item>
+    </style>
+
+    <style name="CodeWeb_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/info_txt_marginTop</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+    </style>
+
+    <style name="CodePhone">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ic_height</item>
+        <item name="android:src">@drawable/ic_phone</item>
+    </style>
+
+    <style name="CodePhone_number">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/info_txt_marginTop</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+    </style>
+
+    <style name="CodeEvent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ic_height</item>
+        <item name="android:layout_marginTop">@dimen/info_event_marginTop</item>
+        <item name="android:src">@drawable/ic_event</item>
+    </style>
+
+    <style name="CodeEvent_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/info_event_marginTop</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+    </style>
+
+    <style name="CodeFacebook">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/social_icon_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/facebook</item>
+        <item name="android:tint">@color/button_tint</item>
+    </style>
+
+    <style name="CodeTwitter">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/social_icon_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/twitter</item>
+        <item name="android:tint">@color/button_tint</item>
+    </style>
+
+    <style name="CodeGPlus">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/social_icon_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/gplus</item>
+        <item name="android:tint">@color/button_tint</item>
+    </style>
+</resources>

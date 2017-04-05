@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="logo_height">190dp</dimen>
+    <dimen name="title_marginTop">9dp</dimen>
+    <dimen name="desc_marginTop">6dp</dimen>
+    <dimen name="desc_marginLeft">10dp</dimen>
+    <dimen name="desc_marginRight">10dp</dimen>
+    <dimen name="ic_height">40dp</dimen>
+    <dimen name="info_txt_marginTop">9dp</dimen>
+    <dimen name="info_event_marginTop">5dp</dimen>
+    <dimen name="ic_email_marginTop">2dp</dimen>
+    <dimen name="table_marginTop">2dp</dimen>
+    <dimen name="bottomBar_height">42dp</dimen>
+    <dimen name="social_icon_height">32dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="info_text_size">16sp</dimen>
+</resources>
